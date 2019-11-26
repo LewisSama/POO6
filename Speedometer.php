@@ -1,9 +1,9 @@
 <?php
 class Speedometer{
+    const RATIOKMTOMILES = 0.621371;
     public static function convertKmToMiles($nb)
     {
-        $kmToMilesRatio = 0.621371;
-        $result = $nb * $kmToMilesRatio;
+        $result = $nb * self::RATIOKMTOMILES;
         return $result;
     }
 }
